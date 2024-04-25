@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+}
+
+.header{
+    position: relative;
+    padding: .5rem 8%;
+    background: #00838F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+.header .logo img{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 2%;
+    bottom: 7px;
+}
+
+.header .logo h5{
+    text-align: right;
+}
+
+.header .navbar{
+    display: flex;
+}
+
+.header .navbar div{
+    padding: 17px;
+}
+
+.header .navbar .search-bar i{
+    z-index: 5;
+    position: absolute;
+    padding-left: 8px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header .navbar .search-bar input{
+    background-color: #fff;
+    border: none;
+    height: 35px;
+    padding-bottom: 3px;
+    padding: 0 1vw;
+    padding-left: 2.3vw;
+    position: relative;
+    width: 20vw;
+    border-radius: 12px;
+}
+
+.header .navbar .icons a{
+    margin-top: 0.3rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+.header .button button{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    text-align: center;
+    width: 9vw;
+}
+
+section .header2{
+    width: 100%;
+    background: #0291a0;
+    height: 93px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .header2 a{
+    color: #fff;
+    text-decoration: none;
+    font-family: poppins;
+
+}
+
+section .header2 i{
+    background-color: #fff;
+    border-radius: 100%;
+    color: #0291a0 ;
+    height: fit-content;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: fit-content;
+    display: block;
+    
+}
+
+footer{
+    background: #00838f;
+    color: #fff;
+    margin-top: 100px;
+}
+
+footer .footerText{
+    text-align: center;
+}
+
+footer .footerBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footerBox .footer-logo{
+    text-align: center;
+}
+
+@media screen and (max-width: 976px) {
+.header .navbar .search-bar input{
+    display: none;
+}
+.header .navbar .search-bar i{
+    display: none;
+}
+.header .logo img{
+    margin-bottom: 25px;
+}
+.header .logo h1 , h5{
+margin-left: 40%;
+}
+.header .logo h5{
+   font-size: 15px;
+}
+.header .button button{
+    font-size: 12px;
+}
+footer .footerBox .footer-logo img{
+    height: 53%;
+}
+
+}
+
+
+
